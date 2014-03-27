@@ -29,7 +29,7 @@ user,password,host,DBを指定すると該当DBに登録されている全テー
 
 **取得**
 
-    $ git clone https://github.com/radutils/createmodelfiles
+    $ git clone https://github.com/radutils/createmodels-scala-activerecord.git
     $ cd ./createmodelfiles
 
 **コンパイル**
