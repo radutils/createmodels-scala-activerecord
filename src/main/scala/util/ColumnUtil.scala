@@ -74,13 +74,17 @@ object ColumnUtil {
       case "YEAR"               => { "NoType" }
       case "CHAR"               => { "String" }
       case "VARCHAR"            => { "String" }
-      case "BINARY"             => { "Byte" }
-      case "VARBINARY"          => { "Byte" }
-      case "TINYBLOB"           => { "Byte" }
-      case "BLOB"               => { "Byte" }
-      case "MEDIUMBLOB"         => { "Byte"}
-      case "LONGBLOB"           => { "Byte" }
-      case _                    => { "NoType"}
+      case "TINYTEXT"           => { "String" }
+      case "TEXT"               => { "String" }
+      case "MEDIUMTEXT"         => { "String" }
+      case "LONGTEXT"           => { "String" }
+      case "BINARY"             => { "Array[Byte]" }
+      case "VARBINARY"          => { "Array[Byte]" }
+      case "TINYBLOB"           => { "Array[Byte]" }
+      case "BLOB"               => { "Array[Byte]" }
+      case "MEDIUMBLOB"         => { "Array[Byte]"}
+      case "LONGBLOB"           => { "Array[Byte]" }
+      case _                    => { "NoType" }
     }
   }
     
