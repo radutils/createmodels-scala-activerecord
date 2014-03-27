@@ -21,7 +21,7 @@ user,password,host,DBを指定すると該当DBに登録されている全テー
   - カラム名が大文字の場合 `@Column("Testcolumn") val _testcolumn: String`
 - カラムに`created_at`, `updated_at`が存在する場合は　`with Datestamps`をつけて `case class`を宣言する。
 - カラムにコメントが付いている場合以下のMapを定義する。
-  - `val  labelName:Map[String,String] = ("#{columnName}" -> "#{comment}"), ....)`
+  - val  labelName:Map[String,String] = (("#{columnName}" -> "#{comment}"), ....)
 
 
 
@@ -30,7 +30,7 @@ user,password,host,DBを指定すると該当DBに登録されている全テー
 **取得**
 
     $ git clone https://github.com/radutils/createmodels-scala-activerecord.git
-    $ cd ./createmodelfiles
+    $ cd ./createmodels-scala-activerecord
 
 **コンパイル**
 
