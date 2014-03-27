@@ -1,0 +1,15 @@
+*.class
+*.log
+*~
+.lib
+
+# sbt specific
+bin/.lib
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+project/targeted
+project/project
